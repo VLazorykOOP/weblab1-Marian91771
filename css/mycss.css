@@ -1,4 +1,259 @@
-h1 {
-  margin: 0; 
-  size: 12; 
+
+header a {
+  padding: 30px;
+  outline: none;
+  text-decoration: none;
+}
+
+.container {
+  margin: 30px;
+}
+
+.main-content h1 {
+  text-align: center;
+  color: rgb(13, 144, 39);
+}
+
+.main-content h5 {
+  text-align: center;
+  color: rgb(13, 144, 39);
+}
+
+.main-content h6 {
+  color: rgb(39, 13, 144);
+}
+
+.main-content p {
+  text-align: start;
+}
+
+.big-text {
+  color: blue;
+}
+
+small {
+  color: rgb(255, 0, 0);
+}
+
+blockquote {
+  font-weight: bold;
+}
+
+ol abbr {
+  font-size: 20px;
+}
+
+#news-content {
+  display: flex;
+}
+
+.news {
+  width: 300px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: aliceblue;
+}
+
+.news img {
+  width: 300px;
+}
+
+.news > p, span, time, del {
+  background-color: aliceblue;
+}
+
+.news-title {
+  font-weight: bold;
+  background-color: aliceblue;
+}
+
+.del-price del {
+  text-decoration: line-through;
+}
+
+footer {
+  background-color: azure;
+}
+
+
+/* Селектори */
+* {
+  margin: 0;
+  padding: 0;
+  background-color: cadetblue;
+}
+
+.class-name {
+  background-color: lightblue;
+}
+
+.container ~ .main-content {
+  border: 1px solid red;
+}
+
+.container > p {
+  color: darkgreen;
+}
+
+a[title] {
+  font-weight: bold;
+}
+
+img[src*=beer] {
+  border: 2px solid gold;
+}
+
+a[href="company.html"] {
+  color: orange;
+}
+
+/* Псевдокласи */
+p:first-child {
+  color: blue;
+}
+
+a:active {
+  color: red;
+}
+
+p:last-child {
+  font-style: italic;
+}
+
+div:empty {
+  background-color: lightgray;
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+p:not(.big-text) {
+  color: darkred;
+}
+
+input:checked {
+  border: 2px solid green;
+}
+
+/* Псевдоелементи */
+p::first-line {
+  font-weight: bold;
+  color: darkblue;
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: red;
+}
+
+/* Границі, заповнювачі та рамки */
+.container {
+  margin: 20px;
+  padding-left: 15px;
+  border-width: thin;
+  border-color: black;
+  border-left-width: 10px;
+  border-right-width: thin;
+  border-bottom-color: blue;
+  border-top-color: green;
+  border-right-style: dashed;
+  border-left-style: hidden;
+}
+
+/* Позиціювання елементів */
+.inline-element {
+  display: inline;
+}
+
+.compact-element {
+  display: compact;
+}
+
+.table-footer {
+  display: table-footer-group;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.marker {
+  display: marker;
+}
+
+.absolute-position {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.static-position {
+  position: static;
+}
+
+.left-float {
+  float: left;
+}
+
+.right-float {
+  float: right;
+}
+
+.clear-right {
+  clear: right;
+}
+
+.ltr-text {
+  direction: ltr;
+  unicode-bidi: normal;
+}
+
+.unicode-embed {
+  unicode-bidi: embed;
+}
+
+/* Візуалізація елементів */
+.responsive-image {
+  max-width: 100%;
+  max-height: none;
+  min-height: 200px;
+}
+
+.text-line {
+  line-height: 1.5;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.scrollable-content {
+  overflow: scroll;
+}
+
+.hidden-element {
+  visibility: hidden;
+}
+
+.outline-element {
+  outline-style: solid;
+  outline-width: thin;
+}
+
+/* Колір фону */
+.color-text {
+  color: navy;
+}
+
+.background-colored {
+  background-color: beige;
+}
+
+.background-image {
+  background-image: url('https://example.com/image.jpg');
+  background-attachment: scroll;
+  background-position: top;
 }
