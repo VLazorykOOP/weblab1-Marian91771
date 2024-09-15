@@ -7,16 +7,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mycss.css">
+    <link title="стилі" rel="stylesheet" href="css/mycss.css">
     <title>Web Lab # 1</title>
 </head>
 <script src="js/myscript.js"></script>
 
 <body>
     <header>
-        <a href="index.html">Про автора</a>
-        <a href="company.html">Моя компанія</a>
-        <a href="news.html">Новини</a>
+        <nav class="navbar">
+            <a href="index.html">Про автора</a>
+            <a href="company.html">Моя компанія</a>
+            <a href="news.html">Новини</a>
+        </nav>
     </header>
     <main>
         <div class="container">
@@ -30,9 +32,13 @@
                 </p>
                 <hr>
                 <p id="content" title="Про автора">
-                    Тут я розповім про себе: <br> Навчаюся в ЧНУ на 2 курсі. <br> Колекціоную масштабні моделі.
-                    <br> Заходите на мою сторінку частіше!
+                    Тут я розповім про себе:
                 </p>
+                <ul class="ul-list" title="Про автора">
+                    <li>Навчаюся в ЧНУ на 2 курсі.</li>
+                    <li>Колекціоную масштабні моделі.</li>
+                    <li>Заходите на мою сторінку частіше!</li>
+                </ul>
                 <big class="big-text">Дякую, що відвідав мою сторінку <br></big>
                 <small title="Дякую за відвідування сайту">Наведи на мене курсор</small>
             </div>

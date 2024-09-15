@@ -1,259 +1,160 @@
+/* Стилі для загального вигляду */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+}
+
+a:hover {
+  color: #e2e2e2;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
 
 header a {
-  padding: 30px;
-  outline: none;
-  text-decoration: none;
-}
-
-.container {
-  margin: 30px;
-}
-
-.main-content h1 {
-  text-align: center;
-  color: rgb(13, 144, 39);
-}
-
-.main-content h5 {
-  text-align: center;
-  color: rgb(13, 144, 39);
-}
-
-.main-content h6 {
-  color: rgb(39, 13, 144);
-}
-
-.main-content p {
-  text-align: start;
-}
-
-.big-text {
-  color: blue;
-}
-
-small {
-  color: rgb(255, 0, 0);
-}
-
-blockquote {
+  color: #fff;
   font-weight: bold;
 }
 
-ol abbr {
-  font-size: 20px;
+header a:hover {
+  text-decoration: underline;
 }
 
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1, h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+h5, h6 {
+  color: #555;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Стилі для сторінки новин */
 #news-content {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .news {
-  width: 300px;
+  width: calc(50% - 20px);
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
-  background-color: aliceblue;
 }
 
 .news img {
-  width: 300px;
-}
-
-.news > p, span, time, del {
-  background-color: aliceblue;
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .news-title {
   font-weight: bold;
-  background-color: aliceblue;
+  color: #007bff;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.del-price del {
-  text-decoration: line-through;
+.del-price {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.ul-list {
+  margin-left: 20px;
 }
 
 footer {
-  background-color: azure;
+  text-align: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  margin-top: 20px;
 }
 
-
-/* Селектори */
-* {
-  margin: 0;
-  padding: 0;
-  background-color: cadetblue;
-}
-
-.class-name {
-  background-color: lightblue;
-}
-
-.container ~ .main-content {
-  border: 1px solid red;
-}
-
-.container > p {
-  color: darkgreen;
-}
-
-a[title] {
-  font-weight: bold;
-}
-
-img[src*=beer] {
-  border: 2px solid gold;
-}
-
-a[href="company.html"] {
-  color: orange;
-}
-
-/* Псевдокласи */
-p:first-child {
-  color: blue;
-}
-
-a:active {
-  color: red;
-}
-
-p:last-child {
+/* Стилі для сторінки компанії */
+blockquote {
   font-style: italic;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 20px;
 }
 
-div:empty {
-  background-color: lightgray;
+ol {
+  padding-left: 20px;
 }
 
-a:link {
-  text-decoration: underline;
+li {
+  margin-bottom: 10px;
 }
 
-p:not(.big-text) {
-  color: darkred;
-}
-
-input:checked {
-  border: 2px solid green;
-}
-
-/* Псевдоелементи */
-p::first-line {
-  font-weight: bold;
-  color: darkblue;
-}
-
-p::first-letter {
-  font-size: 2em;
-  color: red;
-}
-
-/* Границі, заповнювачі та рамки */
-.container {
-  margin: 20px;
-  padding-left: 15px;
-  border-width: thin;
-  border-color: black;
-  border-left-width: 10px;
-  border-right-width: thin;
-  border-bottom-color: blue;
-  border-top-color: green;
-  border-right-style: dashed;
-  border-left-style: hidden;
-}
-
-/* Позиціювання елементів */
-.inline-element {
-  display: inline;
-}
-
-.compact-element {
-  display: compact;
-}
-
-.table-footer {
-  display: table-footer-group;
-}
-
-.table-cell {
-  display: table-cell;
-}
-
-.marker {
-  display: marker;
-}
-
-.absolute-position {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-}
-
-.static-position {
-  position: static;
-}
-
-.left-float {
-  float: left;
-}
-
-.right-float {
-  float: right;
-}
-
-.clear-right {
-  clear: right;
-}
-
-.ltr-text {
-  direction: ltr;
-  unicode-bidi: normal;
-}
-
-.unicode-embed {
-  unicode-bidi: embed;
-}
-
-/* Візуалізація елементів */
-.responsive-image {
+img {
   max-width: 100%;
-  max-height: none;
-  min-height: 200px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.text-line {
-  line-height: 1.5;
+address {
+  font-style: normal;
+  color: #333;
 }
 
-.align-middle {
-  vertical-align: middle;
+.advantages{
+  margin-left: 20px;
 }
 
-.scrollable-content {
-  overflow: scroll;
+#dounload_button{
+  background-color: #007bff;
+  color: white;
+  border-radius: 100px;
+  padding: 10px;
 }
 
-.hidden-element {
-  visibility: hidden;
+dt{
+  font-weight: 600;
 }
 
-.outline-element {
-  outline-style: solid;
-  outline-width: thin;
-}
-
-/* Колір фону */
-.color-text {
-  color: navy;
-}
-
-.background-colored {
-  background-color: beige;
-}
-
-.background-image {
-  background-image: url('https://example.com/image.jpg');
-  background-attachment: scroll;
-  background-position: top;
+dd{
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
