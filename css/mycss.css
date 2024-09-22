@@ -158,3 +158,27 @@ dd{
   margin-left: 20px;
   margin-bottom: 10px;
 }
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  margin-top: 40px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead, tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th, td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
